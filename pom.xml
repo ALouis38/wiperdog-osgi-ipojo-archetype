@@ -4,6 +4,11 @@
 	<artifactId>wiperdog-osgi-ipojo-archetype</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>maven-archetype</packaging>
+  <parent>
+  	<artifactId>wiperdog-parent</artifactId>
+  	<groupId>org.wiperdog</groupId>
+  	<version>0.1.0</version>
+  </parent>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -14,7 +19,7 @@
   <scm>
     <url>scm:git:https://github.com/wiperdog/wiperdog-osgi-ipojo-archetype.git</url>
     <connection>scm:git:https://github.com/wiperdog/wiperdog-osgi-ipojo-archetype.git</connection>
-    <developerConnection>https://github.com/wiperdog/wiperdog-osgi-ipojo-archetype.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/wiperdog/wiperdog-osgi-ipojo-archetype.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 	<build>
