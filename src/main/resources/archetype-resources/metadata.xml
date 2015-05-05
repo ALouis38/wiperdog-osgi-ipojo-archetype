@@ -11,11 +11,13 @@
   <!-- provide OSGi service -->
   <component classname="${package}.internal.SampleProviderImpl">
     <provides />
+    <requires field="logS" />
   </component>
   <instance component="${package}.internal.SampleProviderImpl" />
 
   <!-- consume OSGi service -->
   <component classname="${package}.internal.SampleConsumerImpl">
+  	<requires field="logS" />
 	<requires>
     	<callback type="bind" method="setService"/>
     	<callback type="unbind" method="clearService"/>

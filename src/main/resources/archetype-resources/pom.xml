@@ -39,9 +39,8 @@
   		<version>1.0</version>
   		<type>jar</type>
   		<scope>compile</scope>
-  	</dependency>
+  	</dependency>	
   </dependencies>
-
   <build>
       <plugins>
       <plugin>

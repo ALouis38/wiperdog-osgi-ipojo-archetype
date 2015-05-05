@@ -6,8 +6,12 @@ package ${package}.internal;
 
 import ${package}.SampleIntf;
 
+import org.osgi.service.log.LogService;
+
 public class SampleProviderImpl implements SampleIntf {
 
+	private LogService logS;
+	
 	public String sayHello() {
 		return "Hello";
 	}

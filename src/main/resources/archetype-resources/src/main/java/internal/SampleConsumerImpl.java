@@ -4,9 +4,15 @@
  */
 package ${package}.internal;
 
+import org.osgi.service.log.LogService;
+
 import ${package}.SampleIntf;
 
 public class SampleConsumerImpl {
+	
+	
+	private LogService logS;
+	
 	private SampleIntf svc;
 	void setService(SampleIntf service) {
 		System.out.println("Got service");
